@@ -16,7 +16,7 @@ func (s *Stmt) Close() error {
 
 func (s *Stmt) NumInput() int {
 	s.Logger("Stmt.NumInput")
-	return 0
+	return -1
 }
 
 func (s *Stmt) Exec(args []driver.Value) (driver.Result, error) {
